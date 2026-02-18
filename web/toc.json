@@ -1,0 +1,197 @@
+[
+  {
+    "id": "section-0-disclaimer",
+    "title": "Disclaimer",
+    "file": "html/section-0-disclaimer.html"
+  },
+  {
+    "id": "section-0-intro",
+    "title": "About",
+    "file": "html/section-0-intro.html"
+  },
+  {
+    "id": "section-1",
+    "title": "5 Reasons Why Your Laptop Degrades",
+    "file": "html/section-1.html"
+  },
+  {
+    "id": "section-2",
+    "title": "RIP to all the gaming laptops",
+    "file": "html/section-2.html"
+  },
+  {
+    "id": "section-3",
+    "title": "Why don't they make them cooler?",
+    "file": "html/section-3.html"
+  },
+  {
+    "id": "section-4",
+    "title": "Voltage",
+    "file": "html/section-4.html"
+  },
+  {
+    "id": "section-5",
+    "title": "Some heat math",
+    "file": "html/section-5.html"
+  },
+  {
+    "id": "section-6",
+    "title": "The Silicon Lottery",
+    "file": "html/section-6.html"
+  },
+  {
+    "id": "section-7",
+    "title": "Overclocking and Underclocking",
+    "file": "html/section-7.html"
+  },
+  {
+    "id": "section-8",
+    "title": "Basic Monitoring",
+    "file": "html/section-8.html"
+  },
+  {
+    "id": "section-9",
+    "title": "CPU - The 99% Lock",
+    "file": "html/section-9.html"
+  },
+  {
+    "id": "section-10",
+    "title": "CPU - Why lower our performance?",
+    "file": "html/section-10.html"
+  },
+  {
+    "id": "section-11",
+    "title": "CPU - Clock Ratio Multiplier",
+    "file": "html/section-11.html"
+  },
+  {
+    "id": "section-12",
+    "title": "CPU - ThrottleStop intro",
+    "file": "html/section-12.html"
+  },
+  {
+    "id": "section-13",
+    "title": "CPU - ThrottleStop deeper dive",
+    "file": "html/section-13.html"
+  },
+  {
+    "id": "section-14",
+    "title": "Undervolting - intro",
+    "file": "html/section-14.html"
+  },
+  {
+    "id": "section-15",
+    "title": "CPU - Unlock FIVR",
+    "file": "html/section-15.html"
+  },
+  {
+    "id": "section-16",
+    "title": "CPU - Undervolting the CPU",
+    "file": "html/section-16.html"
+  },
+  {
+    "id": "section-17",
+    "title": "GPU - Undervolting the GPU",
+    "file": "html/section-17.html"
+  },
+  {
+    "id": "section-18",
+    "title": "GPU - over/underclocking",
+    "file": "html/section-18.html"
+  },
+  {
+    "id": "section-19",
+    "title": "GPU - memory",
+    "file": "html/section-19.html"
+  },
+  {
+    "id": "section-20",
+    "title": "RAM - overclocking, preparation",
+    "file": "html/section-20.html"
+  },
+  {
+    "id": "section-21",
+    "title": "RAM - overclocking, easy, but strong plays",
+    "file": "html/section-21.html"
+  },
+  {
+    "id": "section-22",
+    "title": "RAM - overclocking, random notes",
+    "file": "html/section-22.html"
+  },
+  {
+    "id": "section-23",
+    "title": "RAM - overclocking, timings intro",
+    "file": "html/section-23.html"
+  },
+  {
+    "id": "section-24",
+    "title": "RAM - overclocking, timings in detail",
+    "file": "html/section-24.html"
+  },
+  {
+    "id": "section-25",
+    "title": "RAM - overclocking, the process",
+    "file": "html/section-25.html"
+  },
+  {
+    "id": "section-26",
+    "title": "Fans - controlling airflow",
+    "file": "html/section-26.html"
+  },
+  {
+    "id": "section-27",
+    "title": "Battery - 60% / 80% / 100% Cap",
+    "file": "html/section-27.html"
+  },
+  {
+    "id": "section-28",
+    "title": "Windows - Autolaunch",
+    "file": "html/section-28.html"
+  },
+  {
+    "id": "section-29",
+    "title": "Thermal paste - intro",
+    "file": "html/section-29.html"
+  },
+  {
+    "id": "section-30",
+    "title": "Thermal paste - replacement tips",
+    "file": "html/section-30.html"
+  },
+  {
+    "id": "section-31",
+    "title": "Thermal paste - replacement walkthrough",
+    "file": "html/section-31.html"
+  },
+  {
+    "id": "section-32",
+    "title": "Final Result - cyberpunk 2077 test",
+    "file": "html/section-32.html"
+  },
+  {
+    "id": "section-33",
+    "title": "Final Result - CPU stress test",
+    "file": "html/section-33.html"
+  },
+  {
+    "id": "section-34",
+    "title": "Extra Tips - more ways to reduce heat",
+    "file": "html/section-34.html"
+  },
+  {
+    "id": "section-35",
+    "title": "Extra Tips - software",
+    "file": "html/section-35.html"
+  },
+  {
+    "id": "section-36",
+    "title": "Closure - Thank you",
+    "file": "html/section-36.html"
+  },
+  {
+    "id": "section-50-links",
+    "title": "etofok links",
+    "file": "html/section-50-links.html"
+  }
+]
