@@ -1,0 +1,151 @@
+<div class="wrap-section-block radiant">
+
+<h2>RAM - overclocking, preparation</h2>
+
+<p class="textstream">
+
+Overclocking RAM to its absolute potential is a full blown hobby.
+
+A black hole to waste you time into.
+
+No reasonable person should ever bother.
+
+
+
+But all progress depends on being unreasonable.
+
+There is a lot that goes into this process.
+
+It's much more complicated and technical.
+
+
+
+Think of RAM as server for your CPU.
+
+In CPU intensive tasks, you can get a noticeable performance boost from RAM OC.
+
+And that's <i>on top</i> of CPU overclocking.
+
+You can also brick your files and/or operating system - which is files - permanently.
+
+
+
+Before you start fiddling with RAM you should prepare a couple of things.
+
+
+
+<b>First</b>, 
+
+<b>find out how to reset BIOS</b>/Clear CMOS. 
+
+On most laptops you can hold the power button for 60 seconds to reset it.
+
+But not always.
+
+Either way, you <i>need</i> to figure out how to reset BIOS.
+
+Every step a little-too-aggressive bricks your boot process. 
+
+Because things have to load into RAM to boot.
+
+And if RAM fails, things can't load into RAM - so you can't boot.
+
+You won't even get to see your BIOS.
+
+Be aware that when you reset BIOS - you reset <i>all</i> the BIOS changes you made, such as disk priority or voltage unlocks.
+
+
+
+<b>Second</b>, 
+
+check <b>Safe Boot</b> in BIOS.
+
+This is a BIOS setting that automatically resets BIOS after multiple failed boots.
+
+Helpful. 
+
+But not guaranteed to work, that's why I put it second.
+
+
+
+<b>Third</b>,
+
+CPU / GPU stress testing provides immediate feedback.
+
+RAM? Not always.
+
+If you went way too aggressive - you just won't boot.
+
+But if you went mildly too aggressive - you <i>will</i> boot.
+
+And RAM is going to corrupt all your files as it processes them in the background.
+
+
+
+So please. 
+
+<b>You have to test</b> with Memtest / OCCT / TM5 at every step up.
+
+At least for 30 minutes.
+
+These are <i>not your final tests</i>, but you can get a feel whether RAM is throwing errors right off the bat.
+
+
+
+This is <i>omega</i> important.
+
+Much more important that catching a BSOD or reboots and here's why.
+
+
+
+Think about how RAM works - it loads stuff from your hard drive for your CPU to use.
+
+When RAM completes processing that data - it unloads it back to the hard drive.
+
+A faulty or 'starved' RAM <i>makes errors while managing that data</i>.
+
+The data now has errors - <b>it has become corrupted</b>.
+
+<i>Then RAM unloads that corrupted data onto your hard drive, overwriting the files.</i>
+
+
+
+It doesn't know the data is corrupted.
+
+It just loads and unloads it.
+
+It got the original file, fucked it up, and returned it.
+
+And now you have a permanently damaged file on your hard drive.
+
+
+
+This is pretty bad as is - because you might not be able to open or use that file anymore.
+
+Now imagine that was a <i>system file</i>.
+
+It's game over.
+
+And guess where you operating system is - always - by default?
+
+That's right - in RAM.
+
+
+
+So even if you successfully booted into operating system, 
+
+it's <i>not at all</i> means the RAM is not producing errors <i>right now</i>.
+
+That's why you absolutely have to check RAM health at every step.
+
+
+
+Your 'final' RAM test <b>should be hours</b> long.
+
+We are talking 100 cycles long.
+
+That's going to confirm and finalize it.
+
+</p>
+
+</div>

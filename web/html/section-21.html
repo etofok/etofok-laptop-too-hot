@@ -1,0 +1,175 @@
+<div class="wrap-section-block radiant">
+
+<h2>RAM - overclocking, easy, but strong plays</h2>
+
+<p class="textstream">
+
+Thankfully, there are a couple plays anyone can do.
+
+
+
+<b>First</b>,
+
+Make sure you have 2 (two) identical memory sticks installed.
+
+This gives you <b>Dual-channel</b>.
+
+2 sticks perform <i>cosmically</i> better than 1 stick.
+
+Dual-channel <i>doubles your RAM bandwidth</i>:
+
+You had a 2 lane road, now you have a 4 lane road.
+
+This alone gives you <i>massive, massive</i> performance gains,
+
+much more <i>than anything else you might ever do for with your RAM</i>.
+
+Depending on your configuration and task,
+
+we are talking up to <i>50% more performance</i>.
+
+This is by far the best thing you can do.
+
+
+
+<b>Second</b>, 
+
+I would recommend checking whether your specific model has <b>XMP Profile</b>.
+
+<b>XMP Profile</b> is essentially Turbo for RAM.
+
+It's a preset that's going to get you <i>at least 50% of your max possible RAM overclock</i>.
+
+At which point you should probably chill.
+
+I want to reiterate chasing that other half is a whole blown activity, and very autistic at that.
+
+
+
+<b>Third</b>, 
+
+Just like you can bump/lower CPU ratio multiplier, 
+
+you can as easily bump/lower RAM ratio multiplier.
+
+
+
+<b>Real world example</b>:
+
+I noticed that my laptop supports DDR-2933, while my Task Manager shows 2666.
+
+This is actually a very common thing for laptops.
+
+
+
+Decided to give it a lift.
+
+1. Reboot, tap Delete to Enter BIOS
+
+2. Go to <i>Overclocking Performance Menu</i> 
+
+3. Go to <i>Memory</i>
+
+4. Increase the <i>Ratio</i>
+
+I changed Ratio from 10 to 11, which bumped my RAM speed (DDR transfer rate) from 2666 to 2933.
+
+This is nice because this was simple and free.
+
+
+
+Without going into technical detail here 
+
+(and they get very technical I promise)
+
+This was actually a big overclock, at 0.1% the effort.
+
+I didn't touch voltage.
+
+I didn't touch "timings" (oh God).
+
+I directly got ~10% RAM bandwidth AND at ~9% decrease in system latency.
+
+Realistically,
+
+this gives me up to <i>~10% more average FPS / CPU performance</i> in non-GPU bound scenarios, <i>~9% less fps drops</i>, <b><i>and also</i></b> a <i>~9% decrease in system latency / responsiveness of everything</i>.
+
+This is not nothing at all.
+
+
+
+So what did we just do?
+
+RAM - just like the CPU - has a <i>core speed</i> and a <i>ratio multiplier</i>.
+
+Universally, RAM core speed is 133.33 MHz. 
+
+(CPU was 100 MHz if you remember)
+
+But by bumping the multiplier from 10 to 11, my RAM frequency should've gone up...
+
+...from 1333 to 1466?
+
+What?
+
+
+
+Well, it did.
+
+That (1333/1466) frequency is actually <b>Memory Clock - MCLK</b>.
+
+That is, in fact, the real RAM operating frequency.
+
+
+
+Now follow the hand - <b>DDR</b> (as in DDR3, DDR4, DDR5) stands for......
+
+<b><u>D</u>ouble <u>D</u>ata <u>R</u>ate</b>
+
+
+
+So if we multiply <i>MCLK</i> by <i>Double</i> we get...
+
+(133.33 * 10) * 2 = DDR-2666
+
+(133.33 * 11) * 2 = DDR-2933
+
+(133.33 * 12) * 2 = DDR-3200
+
+Cool?
+
+
+
+Saying DDR-3200 MHz is <i>also incorrect</i>.
+
+Your task manager is wrong.
+
+Your BIOS is also wrong.
+
+Because they say DDR-3200 <i>MHz</i>.
+
+That is a lie for the sake of simplicity. 
+
+Or marketing.
+
+
+
+DDR-3200 is <b>d</b>ata <b>r</b>ate <i>transfer speed</i>.
+
+The correct notation for DDR is <b>MT/s</b> - <b>mega transfers per second</b>.
+
+DDR-3200 <i>is not</i> 3200 MHz.
+
+DDR-3200 <i>is</i> 3200 MT/s.
+
+DDR-3200 <i>operates</i> at 1600 <b>MHz</b>.
+
+MCLK MHz = clock speed * multiplier
+
+DDR MT/s = clock speed * multiplier * 2
+
+So MCLK is always half DDR.
+
+</p>
+
+</div>

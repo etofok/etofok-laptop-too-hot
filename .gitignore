@@ -1,0 +1,7 @@
+/web/node_modules
+/web/package.json
+/web/package-lock.json
+/web/gulpfile.js
+/web/index-dev.html
+/web/css/
+/web/js/

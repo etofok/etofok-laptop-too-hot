@@ -1,0 +1,197 @@
+<div class="wrap-section-block radiant">
+
+<h2>CPU - Undervolting the CPU</h2>
+
+<p class="textstream">
+
+Let's avoid the situation of booting up with voltages too low.
+
+You don't want to end up in a reboot-loot - voltage so low it reboots.
+
+Endlessly.
+
+Don't set ThrottleStop to autolaunch yet.
+
+
+
+Double check that ThrottleStop is in fact Turned On. 
+
+The label should say "Turn off".
+
+<img class="" src="assets/images/v/ts-turned-on.jpg" alt="">
+
+We going to adjust [High Performance] profile first, because it has low EPP.
+
+Due to low EPP it has constant maximum performance output, so you'll see the effects of your changes immediately.
+
+ 
+
+Open FIVR.
+
+General intelligence allows us to filter the world and pay attention to what's truly useful and discard everything else. 
+
+In FIVR we are interested in the 3 yellow boxes:
+
+<img class="" src="assets/images/v/ts-yellow-boxes.jpg" alt="">
+
+First, notice there are <b>CPU core</b> and <b>CPU cache</b>.
+
+There are different, separate from each other voltage lanes.
+
+You can undervolt both, and benefit undervolting from both.
+
+
+ 
+Second, go ahead and check <b>Unlock Adjustable Voltage</b> and select <b>Adaptive</b>. 
+
+<img class="" src="assets/images/v/ts-unlock-adaptive.jpg" alt="">
+
+You are in.
+
+This is the holy grail.
+
+This is the game.
+
+
+
+<b>With great power comes great responsibility.</b>
+
+So don't do anything stupid.
+
+Like <i>giving it</i> a massive amount of voltage.
+
+Remember, all these voltage unlocks are so hidden and annoying BECAUSE these are defense layers that prevent users from fiddling with voltage.
+
+You should not fiddle with voltage.
+
+
+
+And just in case…
+
+1 volt is 1000 millivolt.
+
+Not sure how much that is in football fields.
+
+
+
+1000mv is 1.000v
+
+30mv is 0.03v. 
+
+30mv is 0.030v.
+
+30mv is 0.0300000000v.
+
+
+
+Ok.
+
+No reason to touch the first slider, leave it at Default.
+
+Use the second slider to <b>Adaptively OFFSET</b> voltage value to the left (lower).
+
+<img class="" src="assets/images/v/ts-unlock-adaptive.jpg" alt="">
+
+Start at -30mv, click ok. 
+
+You should be ok.
+
+
+
+Use TS Bench to stress the CPU. 
+
+This will put your CPU under maximum possible load.
+
+And if nothing happened… The CPU is OK with that setting. 
+
+Works.
+
+Nice.
+
+
+
+In fact, if you noted down 'the before', you should already see a difference in temperature.
+
+Go lower by 10mv for CPU Core and CPU Cache.
+
+Stress it again.
+
+Repeat the process until you feel like your laptop acts sketchy, reboots, or throws a Blue Screen Of Death (most likely).
+
+Once this happens - congratulations.
+
+You found the 'tipping point' where your system is no longer stable.
+
+You want a stable system.
+
+So let's nudge it back.
+
+
+
+Please notice that we work with negative numbers…
+
+...-50 -40 -30 -20 -10 0 10 20 30 40 50...
+
+
+
+Boot back into Windows if you crashed and <b>revert</b> your undervolt by giving it back the 10mv we took away.
+
+So if you were testing -80mv and crashed, bump it back (to the right) to -70mv.
+
+If you crash again - just bump it again.
+
+That's all there is to it - find the lowest point at which it's stable.
+
+
+
+Now. 
+
+Unintuitively, CPU core and CPU cache <i>don't have to be in sync</i>.
+
+Most likely, CPU cache throws in the tower before CPU core.
+
+For example, 
+
+my CPU cache gives up on me at -90mv voltage offset.
+
+I get a BSOD.
+
+
+
+However, 
+
+if I set <b>CPU cache</b> just below the tipping point at <b>-85mv</b> to stabilize, 
+
+I can drag <b>CPU core</b> all the way <b>down to -185mv</b> and still be stable. 
+
+That's a lot.
+
+Instead of -85mv and -85mv, I get -85mv and -185mv.
+
+85+85 = 170
+
+85+185 = 270
+
+270/170 = 58,8% more.
+
+Very nice.
+
+
+
+Notice that you adjust <i>CPU core</i> and <i>CPU cache</i> <b>per ThrottleStop profile</b> (top-left).
+
+Meaning, your Balanced profile can have different voltage offsets from your High Performance profile.
+
+If you want. 
+
+Personally, I have set these offsets at the same numbers between profiles, and it works for me.
+
+
+
+<b>Important</b>: 
+
+ThrottleStop must be running to apply its effects.
+
+</p>
+
+</div>

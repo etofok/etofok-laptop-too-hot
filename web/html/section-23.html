@@ -1,0 +1,101 @@
+<div class="wrap-section-block radiant">
+
+<h2>RAM - overclocking, timings intro</h2>
+
+<p class="textstream">
+
+RAM timings is an enigma.
+
+But these are as important as the frequency.
+
+
+
+What is a timing?
+
+A timing is a delay.
+
+If I order a pizza it comes at a delay.
+
+The lower the delay - the faster is comes.
+
+Lower = better.
+
+This is another <i>dimension</i> for hunting down performance, but it's different from clock speed.
+
+
+
+Timing is measured in <i>cycles</i>, not seconds.
+
+<i>Timing is how many cycles the job is going to take.</i>
+
+If you have a faster RAM the cycles run faster.
+
+So a task that takes 20 cycles at 1000 MHz is going to take twice as long than at 2000 MHz.
+
+Because 2000 MHz is twice faster than 1000 Mhz.
+
+MCLK (or DDR, since they are 'linked') defines how fast your cycles run.
+
+
+
+These two setups are identical in real-time nanoseconds:
+
+timing-16 cycles at 3200 MT/s 
+
+timing-20 cycles at 4000 MT/s
+
+If you take a second look at these numbers you will notice the same 2:1 relationship between the timings and transfer rates.
+
+There more cycles (16 → 20), but cycles run faster (3200 → 4000 MT/s).
+
+
+
+So which of the two is better?
+
+You deciding between <b>latency</b> - <i>fewer</i> cycles, "tigher" timings
+
+and <b>bandwidth</b> - more data can be transfered at a faster speed and thus at <i>faster</i> cycles.
+
+
+
+Usually, the second scenario is better, because with more bandwidth the CPU gets all the data it needs, when it needs.
+
+You went from a 32 lanes highway road to 40.
+
+The speed limit is the same, but now more cars can move freely at the same time.
+
+Every car can deliver you a pizza, so you have more pizzas per second.
+
+This affects 'clogged' situations like a heavy teamfight in a game where CPU gets overwhelmed with data.
+
+With more bandwidth it's going to drop less frames, because there are more frames being delivered instead of sitting is a traffic jam.
+
+This affects 1% lows fps, fps drops, max fps, heavy data manipulation like zip/upzip or video editing.
+
+
+
+The only scenario in which you <i>wouldn't</i> want more bandwidth is when <i>you don't need more bandwidth</i>.
+
+40 lanes is more than enough for 20 cars - you would rather have faster cars.
+
+If you maxed out your FPS and you never drop a single frame - having more bandwidth does nothing.
+
+But this is somewhat unrealistic.
+
+FPS always drop and you always want more FPS.
+
+
+
+It's important to understand that increasing your data transfer rate, in a way, makes your timings faster without actually making them tighter.
+
+Because faster speed = faster cycles.
+
+
+
+You switch your attention to timings when you just can't get more data rate out of your RAM anymore.
+
+After all, there's a limit.
+
+</p>
+
+</div>

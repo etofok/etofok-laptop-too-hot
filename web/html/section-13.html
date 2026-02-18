@@ -1,0 +1,168 @@
+<div class="wrap-section-block radiant">
+
+<h2>CPU - ThrottleStop deeper dive</h2>
+
+<p class="textstream">
+
+This chapter is for the curious ones to explain why we don't check anything else by default.
+
+There <b>are</b> cases where you actually want to set these.
+
+Allow me to explain how all these settings work (and why).
+
+
+
+<b>Speed Shift</b>. 
+
+Speed Shift EPP stands for 'Energy Performance Preference'.
+
+EPP 0 - maximum performance preference;
+
+EPP 255 - maximum energy preference.
+
+
+Put simply - what frequency your CPU 'prefers'.
+
+High EPP - low clock speeds. Higher energy savings.
+
+Low EPP - high clock speeds. Low energy savings.
+
+
+
+Different Windows power plans have different EPP <i>already</i> built into them.
+
+You can notice EPP values change in ThrottleStop as you switch between power profiles.
+
+For example, [Better Battery] and [Better Performance] set EPP of my Intel i5-10200h to 84.
+
+[Best Performance] sets EPP to 0.
+
+<img class="" src="assets/images/v/ts-epp.jpg" alt="">
+
+This directly affects CPU behavior. 
+
+
+
+On mid-to-high EPP CPU frequency fluctuates, 
+
+depending on what CPU is doing.
+
+If the CPU is doing nothing - it drops frequency,
+
+but quickly ramps up when there is a task to do.
+
+
+
+Low EPP makes your CPU work at its maximum frequency <i>all the time</i>, so that ramp up time is 0.
+
+CPU is always ready.
+
+High EPP is the opposite, so CPU is sluggish and lazy.
+
+Like a sticky jello.
+
+It's very noticeable actually.
+
+
+
+What <i>practical</i> difference does this make?
+
+Well, do you want to maintain the highest frequency or would you rather conserve some power?
+
+
+
+Here's a good example, 
+
+when you unplug your laptop it starts using the battery.
+
+And if you run all your stuff at full power - it drain the battery faster.
+
+At higher EPPs you draw the battery slower.
+
+Slightly slower.
+
+This gives you more battery charge - because you don't deplete it as fast.
+
+
+
+The obvious use is to attach a higher EPP value to your 'I'm on the road' or 'Battery' profile, as it conserves the battery.
+
+Another use is if you're using the laptop as a server and you run it 24/7 - you'll save on the electricity bill.
+
+Not a tremendous amount, but still - it's a legitimate use case.
+
+
+
+So, 
+
+EPP 0 - max full performance always.
+
+EPP 84-128 - mid point. Balanced.
+
+EPP 200 - already noticeably slower.
+
+EPP 255 - effectively soft-locks the clock speeds at their minimums around 800 MHz.
+
+
+
+<b>SpeedStep</b>.
+
+SpeedStep is an older version of EPP - we are talking Core 2 Duo tier.
+
+The only difference is that unlike SpeedShift it's binary - all or nothing.
+
+That's why it's a checkbox, not a slider.
+
+
+
+<b>C1E</b>.
+
+C1E is another power saving mechanism like EPP.
+
+The difference is EPP affects 'active' CPU behavior, while C1E affects 'inactive' CPU behavior.
+
+So they are related, but not exactly the same.
+
+However you can follow the same logic.
+
+Check C1E for your battery/server/idle profiles.
+
+Uncheck it when you need your CPU to work.
+
+
+
+<b>BD PROCHOT</b>.
+
+As mentioned earlier PROCHOT - processor hot - is a safety mechanism that dynamically underclocks the CPU to prevent overheating.
+
+<i>Very heavily underclocks it.</i>
+
+<b>By gigahertz.</b>
+
+Avoid hitting PROCHOT if you want to maintain performance.
+
+
+But BD PROCHOT is not the same as PROCHOT.
+
+PROCHOT is a CPU exclusive thing.
+
+But your CPU may, in some very rare cases, receive 'Danger! Throttle now!' signals without actually hitting the PROCHOT <i>itself</i>.
+
+That means some other component is sending the PROCHOT signal to the CPU.
+
+Most likely a faulty one.
+
+
+That means your CPU might operate at 0.8 GHz - the throttling speed - for seemingly no reason.
+
+In this case you'd want to check BD PROCHOT in ThrottleStop.
+
+I guess that's where its name is coming from.
+
+The CPU will ignore all these signals <i>from other components</i>.
+
+PROCHOT itself will still work just fine.
+
+</p>
+
+</div>

@@ -1,0 +1,71 @@
+<div class="wrap-section-block radiant">
+
+<h2>CPU - Unlock FIVR</h2>
+
+<p class="textstream">
+
+Our next move is to unlock <b>FIVR</b> in ThrottleStop.
+
+(If your FIVR buttons and sliders are <i>not</i> grayed out - you can skip this section.)
+
+
+
+I want to preface this with mentioning that computers come in different configurations.
+
+Models. Manufacturers. BIOS. Operating System.
+
+You <i>might</i> have to do something different for your machine to unlock voltage controls.
+
+And with some motherboards/CPUs it might not be possible at all.
+
+
+
+But the below works for my MSI GF65.
+
+1. Reboot your laptop and keep tapping Delete to enter <b>BIOS</b>.
+
+2. Press Right Shift + Right CTRL + Left Alt + F2 to activate <b>Advanced Mode</b> (this works for MSI GF65, yours might vary)
+
+3. Go to <b>Power and Performance</b>.
+
+4. Go to <b>CPU Power Management Control</b>.
+
+5. Go to <b>CPU Lock Configuration</b>.
+
+6. Set <b>CFG Lock</b> and <b>Overclock Lock</b> to <i>Disabled</i>.
+
+7. Press Right Shift + Right CTRL + Left Alt + F2 again to exit advanced mode, 
+
+otherwise it might not let you save.
+
+8. Save and Boot.
+
+
+
+If you are on Windows 11 you <i>might</i> need to jump through extra hoops.
+
+
+Try disabling "Core isolation" - "Memory integrity" in Windows Defender.
+
+<img class="" src="assets/images/v/misc-windows-core-isolation-search.jpg" alt="">
+
+If still no, try disabling some of the "Windows Features":
+
+<img class="" src="assets/images/v/misc-windows-features-search.jpg" alt="">
+
+<img class="" src="assets/images/v/misc-windows-features.jpg" alt="">
+
+- Try to disable "Windows Subsystem for Linux" (WSL2).
+- Try to disable "Windows Sandbox".
+- Try to disable "Hyper-V Hypervisor".
+- Try to disable "Virtual Machine Platform".
+- Try to delete the ThrottleStop config file (.ini)
+- Try to reboot
+
+If still no, try to look up on forums.
+
+The answer exists.
+
+</p>
+
+</div>
