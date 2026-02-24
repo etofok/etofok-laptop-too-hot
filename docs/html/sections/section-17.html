@@ -1,0 +1,168 @@
+<div class="wrap-section-block">
+
+<h2>GPU - Undervolting the GPU</h2>
+
+<p class="textstream">
+
+We already made some <b>massive</b> progress.
+
+Congratulations.
+
+In this chapter we will tinker with the GPU.
+
+Given what we have learned already - it's smooth sailing ahead.
+
+
+
+The GPU frequency is just that - frequency.
+
+There are no cores.
+
+Or multipliers.
+
+If your GPU says it's 1500 MHz - it's 1500 MHz.
+
+So instead of adjusting 'core multipliers', we're going to adjust the frequency itself.
+
+
+
+Let's get our baselines first.
+
+
+
+Download, install and open <b>GPU-Z</b> for monitoring.
+
+Download, install and open <b>Unigine Valley</b> or <b>Furmark</b> for stress testing.
+
+<img class="" width="296" height="358" src="assets/images/v/gpu-valley.jpg" alt="">
+
+
+
+Run a stress test and figure out your <b><i>maximum</i> 'GPU Clock'</b> and <b><i>maximum</i> 'GPU Voltage'</b>.
+
+For me that's 1755 MHz and 0.9v, respectively.
+
+<img class="" width="403" height="736" src="assets/images/v/gpu-z.jpg" alt="">
+
+Remember or note these numbers down.
+
+
+
+Also pay attention to your GPU benchmark score.
+
+That's the real performance of your card.
+
+Might be useful if you want to overclock it and see how much better it performs.
+
+
+
+
+Now go back to MSI Afterburner.
+
+(!) Do not check the "<i>Apply overclocking at system startup</i>" <b>unless and until</b> you're 100% confident your GPU undervolt offset is stable enough to boot.
+
+<img class="" width="304" height="119" src="assets/images/v/gpu-ab-apply.jpg" alt="">
+
+Otherwise you won't be able to boot to change it.
+
+Set auto applying <i>only after you ok your results</i>.
+
+
+
+Now,
+
+1. Open MSI Afterburner - Open Settings
+
+2. Go to 'General' Tab
+
+3. Check 'Unlock Voltage Control'.
+
+<img class="" width="323" height="54" src="assets/images/v/gpu-ab-vc.jpg" alt="">
+
+4. Press Apply/OK
+
+5. In the main Afterburner screen press CTRL+F.
+
+
+
+This opens the 'Voltage/Frequency curve editor'
+
+This is where the magic happens.
+
+<img class="" width="723" height="468" src="assets/images/v/gpu-ab-vfce.jpg" alt="">
+
+Notice the legend: 
+
+1. left-to-right is <b>voltage</b>.
+
+2. bottom-to-top is <b>frequency</b>.
+
+
+
+This is what to expect: 
+
+Unlike undervolting the CPU, 'on fail' you won't get a BSOD.
+
+The stress testing application will either freeze or black screen.
+
+Either way, you'll immediately notice that something has happened. 
+
+Try to kill the app via ALT+F4 or Task Manager, and if that fails just shutdown.
+
+
+
+Anyway, let's do this.
+
+Find the node of your max GPU voltage.
+
+(For me that is 0.9v, as seen in GPU-Z.)
+
+It also horizontally lies on the 1755 MHz row.
+
+
+
+Grab a node to the left of it.
+
+I start at around -50mv.
+
+So I drag the 850mv node up to the 1755 MHz frequency row.
+
+<img class="" width="973" height="528" src="assets/images/v/gpu-ab-vfce-node.jpg" alt="">
+
+You only need to drag ONE node.
+
+
+
+Steps to follow:
+
+1. Left-click a few pixels to the left of the node you just touched.
+
+2. Hold Shift - Hold Left Click and 'drag' left-click to the right. 
+   This way you select every node to the right with a blue box.
+
+3. Press Shift + L. 
+   This will flatten the curve.
+
+<img class="" width="976" height="529" src="assets/images/v/gpu-ab-vfce-node-select-all.jpg" alt="">
+
+4. Press Enter, twice.
+
+5. Now you are back in the main menu.
+   (optionally enter the Curve Editor again (CTRL+F) again to verify it has been adjusted.
+
+6. Click Apply.
+
+7. Save Profile to 1.
+
+8. Done.
+
+
+After some stepping down (and tests!) I figured that I need at least 812mv to function at that frequency.
+
+This is a decrease of 88mv from the default 900mv / 0.9v.
+
+Nice.
+
+</p>
+
+</div>

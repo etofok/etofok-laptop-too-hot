@@ -1,0 +1,166 @@
+<div class="wrap-section-block">
+
+<h2>RAM - overclocking, the process</h2>
+
+<p class="textstream">
+
+The first thing you want to max out is frequency / trasfer speed / bandwidth.
+
+Bump the multiplier by one.
+
+Keep the 2-to-1 MT/s-to-MHz ratio.
+
+DDR [2] : [1] MCLK = UCLK = FCLK.
+
+
+
+For example, going
+
+from DDR 2666 MT/s : 1333 MHz MCLK/UCLK/FCLK
+
+to DDR 2933 MT/s : 1466 MHz MCLK/UCLK/FCLK
+
+is a good starting point that gives a real benefit.
+
+<img class="" width="234" height="106" src="assets/images/v/ram-success.jpg" alt="">
+
+Next try bumping the multiplier again by 1.
+
+DDR 3200 MT/s : 1600 MHz MCLK/UCLK/FCLK
+
+If you boot, congratulations, that is insane.
+
+Now do a lot of tests.
+
+
+
+But most likely you won't succeed and won't boot.
+
+Because that is an massive overclock. 
+
+Remember, we haven't touched voltage or timings, but just sped up everything by 12/10 20%.
+
+
+
+So what you can try is giving RAM a little (a little) more DRAM voltage.
+
+We are talking maybe 0.10v.
+
+Very little.
+
+Voltage is damaging and reduces lifespan of your components, including RAM, so I would base my decision making how much voltage to give purely based on how rich I am.
+
+(That's why I undervolt my things.)
+
+Usually, laptop DDR4 RAM sits at 1.2v (as per industry standard), and if you have XMP profile you'll see a bump to 1.35v
+
+That's 0.15v of difference.
+
+So that range is probably safe.
+
+
+
+Any more is already pushing it.
+
+1.4v (+0.2v off the non-XMP baseline) is probably the frying pan territory for the laptop.
+
+Remember,
+
+heat from voltage scales quadratically, so going from 1.2v to 1.4v is <i>36% more</i> heat.
+
+And because we are trying to add 20% to our MT/s (10 → 12), that is another 20% heat just from frequency alone, 
+
+so, (don't quote me there, but this is how I understand it)
+
+1.36 * 1.2 = 63% hotter of the baseline?
+
+Yikes.
+
+Desktop RAM can handle that, probably, but laptop?
+
+I wouldn't be so sure.
+
+Consider, again, that under stress your <i>entire laptop</i> heats up like a pan - CPU works, GPU works...
+
+and all this heat stacks on each other.
+
+Think of the poor crammed laptop RAM with no heat sinks.
+
+
+
+So give it +0.1v or +0.15v and try to boot again that that multiplier.
+
+If it doesn't boot that's still in the realm of normal.
+
+We need to worsen the timings to the 'previous' level.
+
+
+
+Remember, increasing MCLK/DDR speeds up all your cycles.
+
+Which might result in not enough time to complete the job:
+
+too few cycles at a much faster speed = not enough real time.
+
+So it is reasonable at this point to actually <i>increase</i> timings up.
+
+
+
+If you had something like 
+
+18-20-20-44 at 10 multiplier, then to maintain the same allocated real-time you need to bump timings by a relative amount i.e.
+
++10%
+20-22-22-48
+
+(because going from 10 → 11 multiplier is 11/10 = 10% more)
+(because going from 11 → 12 multiplier is 12/11 = another 9% more)
+
+These timings are nearly identical in real-time performance between 10→11 (2666 MT/s → 2993 MT/s).
+
+
+
+<b>but</b> 
+
+1) we added more bandwidth (MT/s) with all its benefits
+
+2) all the other sub-timings - such as tRFC [refresh] - still complete their cycles faster
+
+Realistically, this <i>should</i> allow you to boot.
+
+And at this point I would do my first hard tests.
+
+
+If you can't boot even with loosened timings, most likely, you just can't jump to this level of bandwidth MT/s.
+
+Settle at the previous ratio (11 in my case), and switch your attention to getting better timings.
+
+
+
+I personally hold an opinion 
+
+(that I'm not married to) 
+
+that if you have achieved two step ups i.e. 10→12 or 11→13
+
+even with +0.1v and 10%/20% looser primary timings,
+
+this is fantastic.
+
+
+
+Best timing to actually tighten is tRFC [refresh].
+
+tRFC [refresh] needs excessive testing, and from this point onward I would test for longer periods every step up.
+
+
+
+You can also look up online other peoples' results. 
+
+This usually gives a decent benchmark, which is going to safe you a lot of time.
+
+No need to test tRFC 400 at 3200 MT/s if you already know it's not going to work anyway.
+
+</p>
+
+</div>
